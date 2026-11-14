@@ -1,0 +1,29 @@
+﻿{
+    "bridge":  {
+                   "eventsPath":  "D:\\\\Andromeda_memory\\\\andromeda2\\\\voice_bridge\\\\events.jsonl",
+                   "latestResultPath":  "D:\\\\Andromeda_memory\\\\andromeda2\\\\voice_bridge\\\\latest_result.json",
+                   "pollIntervalMs":  200,
+                   "idleFallbackMs":  1200,
+                   "dedupeMaxEntries":  200,
+                   "skipExistingEventsOnStart":  true,
+                   "repeatBlockWindowMs":  600000,
+                   "repeatBlockMinChars":  20
+               },
+    "tts":  {
+                "primaryEngine":  "piper",
+                "voice":  "en_US-amy-low",
+                "piperPath":  "C:\\Users\\rajka\\Desktop\\voice_machine\\voice_back\\tools\\piper\\piper\\piper.exe",
+                "piperModelPath":  "C:\\Users\\rajka\\Desktop\\voice_machine\\voice_back\\models\\piper\\en_US-amy-low_vb.onnx",
+                "piperConfigPath":  "C:\\Users\\rajka\\Desktop\\voice_machine\\voice_back\\models\\piper\\en_US-amy-low_vb.onnx.json",
+                "piperOutputDir":  "logs/current/tts_cache",
+                "piperTimeoutMs":  20000,
+                "systemFallback":  true
+            },
+    "playback":  {
+                     "volume":  1.0,
+                     "deviceName":  ""
+                 },
+    "ui":  {
+               "enabled":  true
+           }
+}

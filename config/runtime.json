@@ -1,0 +1,104 @@
+{
+  "app": {
+    "name": "voice_machine",
+    "autoStartListening": true
+  },
+  "audio": {
+    "sampleRate": 16000,
+    "channels": 1,
+    "blockSize": 1600,
+    "preferredInputDeviceLabel": "OBSBOT Tiny SE Microphone",
+    "inputDeviceMatchStrategy": "contains",
+    "fallbackPolicy": {
+      "allowDefaultOnPreferredFailure": false,
+      "allowDefaultOnSilentPreferred": false,
+      "denyDeviceNamePatterns": [
+        "stereo mix",
+        "loopback",
+        "realtek"
+      ]
+    },
+    "obsbotControl": {
+      "autoLaunchControlSoftware": true,
+      "controlSoftwarePath": "C:\\Program Files\\OBSBOT Center\\bin\\OBSBOT_Center.exe",
+      "requireControlSoftwareRunning": true,
+      "startWaitMs": 3500,
+      "processStabilityWaitMs": 1200,
+      "restartWaitMs": 2200,
+      "osc": {
+        "enabled": true,
+        "host": "127.0.0.1",
+        "port": 16284,
+        "sendConnectedPing": true,
+        "sendWakeCommand": true,
+        "selectDeviceOnStart": true,
+        "wakeDeviceIndex": 0,
+        "wakeDeviceIndices": [0, 1, 2, 3],
+        "wakeState": 1,
+        "requireOscControl": false,
+        "forceResumeOnLaunch": true,
+        "forceResumeBurstCount": 4,
+        "forceResumeBurstDelayMs": 650,
+        "forceResumeSettleMs": 2600,
+        "resumePulseSleepMs": 220,
+        "keepAwakeEnabled": true,
+        "keepAwakeIntervalMs": 45000
+      }
+    }
+  },
+  "wake": {
+    "wakeWord": "andromeda",
+    "wakeAliases": [
+      "andromida",
+      "andromeda"
+    ],
+    "enableOpenWakeWord": false,
+    "openWakeWordThreshold": 0.5,
+    "openWakeWordModelPaths": [],
+    "openWakeWordLoadDefaultModels": true,
+    "enableTranscriptFallback": true,
+    "transcriptFallbackIntervalMs": 700,
+    "transcriptFallbackRecentSpeechMs": 2600,
+    "transcriptFallbackMaxAudioSeconds": 1.0,
+    "transcriptFallbackMinRms": 0.011,
+    "transcriptFallbackMinSpeechMs": 320
+  },
+  "capture": {
+    "maxCommandSeconds": 5.0,
+    "minCommandSeconds": 0.6,
+    "silenceHangoverMs": 550,
+    "speechRmsThreshold": 0.022,
+    "silenceRmsThreshold": 0.010,
+    "preWakeKeepMs": 1700,
+    "noSpeechFinalizeMs": 1650,
+    "slowWakeProbeMs": 1500,
+    "slowWakePreKeepMs": 3200
+  },
+  "stt": {
+    "model": "small.en",
+    "device": "cpu",
+    "computeType": "int8",
+    "language": "en",
+    "beamSize": 4,
+    "vadFilter": false,
+    "initialPrompt": "Andromeda command capture",
+    "enableWakeModel": true,
+    "wakeModel": "small.en",
+    "wakeDevice": "cpu",
+    "wakeComputeType": "int8",
+    "wakeAutoGainEnabled": true,
+    "wakeAutoGainTargetRms": 0.045,
+    "wakeAutoGainMax": 12.0
+  },
+  "diagnostics": {
+    "silenceNoFramesTimeoutMs": 2300,
+    "startupNoCallbackRetries": 4,
+    "startupRetryDelayMs": 1400,
+    "restartObsbotOnPersistentNoCallbacks": false,
+    "restartObsbotSettleMs": 3000,
+    "runtimeNoAudioTimeoutMs": 4500,
+    "runtimeRecoverCooldownMs": 2500,
+    "runtimeMaxRecoverFailures": 4,
+    "showDebugInUi": true
+  }
+}

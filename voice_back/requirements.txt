@@ -1,0 +1,4 @@
+numpy
+sounddevice
+pyttsx3
+pywin32
