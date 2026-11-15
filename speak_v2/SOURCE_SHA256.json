@@ -1,0 +1,18 @@
+{
+  "run.py": "93c0e624cdd3ee8a59222d4de4f8b7efcbe0c10e6f93c41fc10bcb2e6b33d7c8",
+  "requirements.txt": "b8ed79e48639d0df06a8afd8794696c5926e6c4d5920ae3fe2941ff9febf5f90",
+  "app/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "app/bot/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "app/bot/strategy_bot.py": "21eb1187d12d416626621db3c9d5f6cea107c0ed8fb4ae0596c10a49d8060506",
+  "app/common/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "app/common/ipc.py": "934512312f1db08b75597567f260960939c423832c29d5c08a836eb1acec1336",
+  "app/common/logger.py": "269a8646bdba058c395cd3469de1ece2bee90d2de97ac60ab8a38067b35f02ec",
+  "app/common/types.py": "5a3bb81734f4819556097561ec85bf018d4b9f6f33559ee11d5536f639730521",
+  "app/core/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "app/core/orchestrator.py": "f95c223a56a14ff7b23e1fadca52ea1edc59f3e7887997ec24bb4487ab083ef0",
+  "app/services/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "app/services/inserter_service.py": "b95d2c2699be3defd0117f8eccad9324f1b4d4c06a6606691d179d06c5faf4b5",
+  "app/services/stt_service.py": "6e2cd8747bd6e8627c52f46d7cf60114dbc7dcd23f09e4f04e1d2ea88503f850",
+  "app/ui/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "app/ui/overlay.py": "cd9142c1d3f3dfa74b62d32ea7dc901f6a36a9675b43ea9c6823f89caedda440"
+}

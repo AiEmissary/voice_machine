@@ -17,3 +17,12 @@ models/
 *.sqlite
 desktop.ini
 tmp_*
+
+# Local Speak V2 state and generated launcher files
+speak_v2/data/
+launcher.json
+VoiceMachine.exe
+VoiceMachine.ico
+*.flac
+*.ogg
+*.m4a
